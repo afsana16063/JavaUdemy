@@ -2,6 +2,14 @@ package Methods;
 
 public class OverloadedArea {
 
+    boolean validate(String name) {
+        return name.matches("a-zA-z\\s+");
+    } 
+
+    boolean validate(int age) {
+        return age>=3 && age<=15;
+    }
+
     int reverse(int n)
     {
         int rev=0;
